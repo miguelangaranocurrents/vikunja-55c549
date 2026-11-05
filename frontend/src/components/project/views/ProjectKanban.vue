@@ -357,7 +357,8 @@ const DRAG_OPTIONS = {
 	// Sortable's default edge zone is 30px, which is too narrow to reliably
 	// reach the buckets that are off screen while dragging.
 	scrollSensitivity: 80,
-	// Native dragover events do not reliably drive edge auto-scroll, so scroll from pointer movement.
+	// Drive edge auto-scroll from pointer movement during a drag, so the board scrolls
+	// when a task is held near its left or right edge.
 	forceAutoScrollFallback: true,
 } as const
 
